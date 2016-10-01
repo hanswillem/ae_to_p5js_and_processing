@@ -3,14 +3,14 @@ Boilerplate for ae_to_p5js
 
 usage:
 export keyframes from ae using script exportPositionKeyframes (from this repo)
-put the exported txt file in the data folder of this sketch
+put the exported txt file in the same folder as this sketch
 */
 
 var ae_rawKeys, ae_keys, ae_x, ae_y ;
 
 
 function preload() {
-    ae_rawKeys = loadStrings('data/keyframes.txt');
+    ae_rawKeys = loadStrings('keyframes.txt');
 }
 
 
@@ -45,5 +45,5 @@ function draw() {
     fill(255);
     noStroke();
     ae_getPos();
-    ellipse(ae_x, ae_y, 50, 25);
+    ellipse(ae_x, ae_y, 50, 50);
 }
