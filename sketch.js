@@ -1,6 +1,7 @@
 /*
 Boilerplate for ae_to_p5js
 
+usage:
 export keyframes from ae using script exportPositionKeyframes (from this repo)
 put the exported txt file in the data folder of this sketch
 */
