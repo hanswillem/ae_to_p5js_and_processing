@@ -1,0 +1,1 @@
+use exportPositionKeyframes.jsx to export keyframes from After Effects
