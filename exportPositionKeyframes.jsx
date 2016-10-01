@@ -1,7 +1,10 @@
 /*
 Export position keyframes of the selected layer
-Copyright: Hans Willem Gijzel (hanswillemgijzel@gmail.com)
-After Effects 2015.3 release / version 13.8.0.144
+After Effects 2015.3
+
+usage:
+Select a layer with position keyframes and run this script.
+Import the exported .txt file in a p5js file using the p5js sketch in this repo
 */
 
 
