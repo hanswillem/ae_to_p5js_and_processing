@@ -1,4 +1,4 @@
-# After Effetcs to p5js
+# After Effects to p5js
 export position keyframes from After Effects and import them in p5js.
 
 Use exportPositionKeyframes.jsx to export keyframes from After Effects (select a layer and run the script).
