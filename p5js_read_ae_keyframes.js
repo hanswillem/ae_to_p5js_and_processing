@@ -1,16 +1,14 @@
 /*
-Boilerplate for ae_to_p5js
-
-usage:
-export keyframes from ae using script exportPositionKeyframes (from this repo)
-put the exported txt file in the same folder as this sketch
+Use in combination with export_ae_keyframes.jsx
 */
 
-var ae_rawKeys, ae_keys, ae_x, ae_y ;
-
+var ae_rawKeys, ae_keys, ae_x, ae_y;
+var logo;
+var cnv;
 
 function preload() {
     ae_rawKeys = loadStrings('keyframes.txt');
+    logo = loadImage('p5jslogo.png');
 }
 
 
@@ -36,16 +34,19 @@ function ae_getPos() {
 
 
 function setup() {
-    createCanvas(1280, 720);
+    cnv = createCanvas(426, 720);
+    background(23, 66, 80);
     ae_keys = parseKeyframes(ae_rawKeys);
     frameRate(30);
+    imageMode(CENTER);
 }
 
 
 function draw() {
-    background(0);
+    background(23, 66, 80);
     fill(255);
     noStroke();
     ae_getPos();
-    ellipse(ae_x, ae_y, 50, 50);
+    image(logo, ae_x, ae_y);
+    //save(cnv, 'render/frame_' + frameCount + '.png');
 }
