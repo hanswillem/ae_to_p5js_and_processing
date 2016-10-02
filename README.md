@@ -1,6 +1,8 @@
 # After Effects to p5js
 export position keyframes from After Effects and import them in p5js.
 
+![alt text](https://github.com/hanswillem/ae_to_p5js_and_processing/blob/master/image.gif)
+
 Use the **export_ae_keyframes.jsx** script to export keyframes from After Effects (select a layer and run the script).
 The exported txt file can be used to import the keyframes in p5js or processing. 
 
