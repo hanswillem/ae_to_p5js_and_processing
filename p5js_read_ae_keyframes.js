@@ -1,6 +1,5 @@
-/*
-Use in combination with export_ae_keyframes.jsx
-*/
+// Use in combination with export_ae_keyframes.jsx
+
 
 var ae_rawKeys, ae_keys, ae_x, ae_y;
 var logo;
