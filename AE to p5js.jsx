@@ -28,7 +28,6 @@ function getKeyframes() {
 
 // save the keyframes to a .txt file
 function saveKeyframes(c) {
-    c = c.join(',');
     var doc = new File('~/Desktop/keyframes.txt');
     doc.open("w");
     doc.write(c);
