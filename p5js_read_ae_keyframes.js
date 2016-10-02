@@ -41,5 +41,5 @@ function draw() {
     fill(255);
     noStroke();
     ae_getPos();
-    ellipse(ae_x, ae_y, 50, 50);
+    ellipse(ae_x, ae_y, 25, 25);
 }
