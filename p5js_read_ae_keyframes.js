@@ -16,12 +16,14 @@ function preload() {
 
 function parseKeyframes(k) {
     var parsedKeys = [];
-    var rawKeys = k[0].split('*');
-    for (var i = 0; i < rawKeys.length - 1; i++) {
-        var pos = rawKeys[i].match(/\d+/g);
-        var posx = float(pos[0]);
-        var posy = float(pos[1]);
-        parsedKeys.push({x: posx, y: posy});
+    for (var i = 0; i < k.length; i++) {
+        var pos = (k[i].split(','));
+        var xpos = pos[0];
+        var ypos = pos[1];
+        parsedKeys.push({
+            x: float(xpos),
+            y: float(ypos)
+        });
     }
     return parsedKeys;
 }
