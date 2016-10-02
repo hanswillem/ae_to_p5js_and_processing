@@ -1,4 +1,4 @@
-# After Effects to p5js
+# After Effects to p5js and Processing
 ### Export position keyframes from After Effects and import them in p5js and Processing.
 
 ![alt text](https://github.com/hanswillem/ae_to_p5js_and_processing/blob/master/image.gif)
